@@ -10,12 +10,9 @@ composer install
 # Publish .env file
 cp .env.example .env
 
-# Start Laravel Sail
-./vendor/bin/sail up -d
-
 # Generate key for the app
-./vendor/bin/sail art key:generate
+php artisan key:generate
 
 # Migrate the database
-./vendor/bin/sail art migrate
+php artisan migrate
 ```
